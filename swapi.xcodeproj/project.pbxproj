@@ -14,6 +14,7 @@
 		DBBD6DF328DA61BE00FFDE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBD6DF228DA61BE00FFDE59 /* Assets.xcassets */; };
 		DBBD6DF628DA61BE00FFDE59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBD6DF428DA61BE00FFDE59 /* LaunchScreen.storyboard */; };
 		DBBD6DFE28DA632B00FFDE59 /* SWAPI_Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD6DFD28DA632B00FFDE59 /* SWAPI_Helper.swift */; };
+		DBBD6E0528DA7E5F00FFDE59 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBD6E0428DA7E5F00FFDE59 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DBBD6DF528DA61BE00FFDE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBD6DF728DA61BE00FFDE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBBD6DFD28DA632B00FFDE59 /* SWAPI_Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPI_Helper.swift; sourceTree = "<group>"; };
+		DBBD6E0428DA7E5F00FFDE59 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				DBBD6DEB28DA61BD00FFDE59 /* SceneDelegate.swift */,
 				DBBD6DED28DA61BD00FFDE59 /* ViewController.swift */,
 				DBBD6DFD28DA632B00FFDE59 /* SWAPI_Helper.swift */,
+				DBBD6E0428DA7E5F00FFDE59 /* People.swift */,
 				DBBD6DEF28DA61BD00FFDE59 /* Main.storyboard */,
 				DBBD6DF228DA61BE00FFDE59 /* Assets.xcassets */,
 				DBBD6DF428DA61BE00FFDE59 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				DBBD6DEE28DA61BD00FFDE59 /* ViewController.swift in Sources */,
 				DBBD6DEA28DA61BD00FFDE59 /* AppDelegate.swift in Sources */,
 				DBBD6DEC28DA61BD00FFDE59 /* SceneDelegate.swift in Sources */,
+				DBBD6E0528DA7E5F00FFDE59 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
