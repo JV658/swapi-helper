@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         SWAPI_Helper.fetchDir()
+//        PokeAPI_Helper.fetchDir()
     }
 
 
