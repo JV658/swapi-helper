@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct People{
-    var name: String!
-    var flims: [String] = []
-    var height: String!
+struct People: Codable{
+    var name: String
+    var films: [String]
+    var height: String
 }
