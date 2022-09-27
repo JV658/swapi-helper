@@ -15,7 +15,8 @@ class SWAPI_Helper{
         return URLSession(configuration: config)
     }()
     
-    static public func fetchDir(){
+    //create a callback parameter
+    static public func fetchDir(callback: @escaping (People)->Void){
         print(#function)
         guard
             let url = URL(string: urlString)
@@ -33,6 +34,7 @@ class SWAPI_Helper{
                     
                     let results = try decoder.decode(People.self, from: data)
                     
+                    callback(results)
                     
                 }catch let err{
                     print("\(err)")
@@ -44,5 +46,25 @@ class SWAPI_Helper{
             }
         }
         task.resume()
+    }
+    
+    
+    static public func fetchDir() async -> People?{
+        guard
+            let url = URL(string: urlString)
+        else{
+            preconditionFailure("was not able to convert string to url: \(urlString)")
+        }
+        
+        let request = URLRequest(url: url)
+        do{
+            let (data, response) = try await session.data(for: request)
+            let decoder = JSONDecoder()
+            print(response)
+            return try decoder.decode(People.self, from: data)
+        } catch let err {
+            print("error: \(err)")
+            return nil
+        }
     }
 }
