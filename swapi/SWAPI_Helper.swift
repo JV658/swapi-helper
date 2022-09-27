@@ -29,19 +29,11 @@ class SWAPI_Helper{
             
             if let data = data {
                 do{
-                    let jsonData = try JSONSerialization.jsonObject(with: data)
+                    let decoder = JSONDecoder()
                     
-                    guard
-                        let jsonDictionary = jsonData as? [AnyHashable: Any],
-                        let films = jsonDictionary["films"] as? [String],
-                        let name = jsonDictionary["name"] as? String,
-                        let height = jsonDictionary["height"] as? String
-                    else {
-                        preconditionFailure("could not properly parse json Data")
-                    }
+                    let results = try decoder.decode(People.self, from: data)
                     
-                    var person = People(name: name, flims: films, height: height)
-                    print(person.height)
+                    
                 }catch let err{
                     print("\(err)")
                 }
